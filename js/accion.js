@@ -16,10 +16,10 @@
                         var nombre = usuario["name"]["first"];
                         var apellido = usuario["name"]["last"];
                         var email = usuario["email"];
-                        var localidad = usuario["location"]["city"]
-                        var estado = usuario["location"]["state"]
-                        var cp = usuario["location"]["postcode"]
-                        var calle = usuario["location"]["street"]
+                        var localidad = usuario["location"]["city"];
+                        var estado = usuario["location"]["state"];
+                        var cp = usuario["location"]["postcode"];
+                        var calle = usuario["location"]["street"];
                         var imagen = usuario["picture"]["large"];
                         texto="<div class='fila'>";
                             texto+="<figure>";
@@ -38,7 +38,7 @@
                     console.log(textStatus);
                 })
         });
-        $("#fila").on("click", function (e) {
+        $(texto).on("click", function (e) {
             $(this).hide();
 
         })
